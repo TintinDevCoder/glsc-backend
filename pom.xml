@@ -14,5 +14,8 @@
         <module>glsc-order</module>
         <module>glsc-coupon</module>
         <module>glsc-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>glsc-common</module>
     </modules>
 </project>
