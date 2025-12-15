@@ -1,11 +1,11 @@
-package com.dd.glsc.product.entity;
+package com.dd.glsc.product.entity.vo;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
+import java.util.List;
 
 /**
  * 商品三级分类
@@ -15,8 +15,7 @@ import lombok.Data;
  * @date 2025-12-05 10:16:51
  */
 @Data
-@TableName("pms_category")
-public class CategoryEntity implements Serializable {
+public class CategoryVO{
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -56,6 +55,10 @@ public class CategoryEntity implements Serializable {
 	 * 商品数量
 	 */
 	private Integer productCount;
+    /**
+     * 子分类
+     */
+    private List<CategoryVO> children;
 
     
 }

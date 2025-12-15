@@ -10,6 +10,7 @@
         <module name="glsc-ware" />
         <module name="glsc-order" />
         <module name="glsc-coupon" />
+        <module name="glsc-gateway" />
         <module name="renren-fast" />
         <module name="glsc-common" />
         <module name="glsc-product" />

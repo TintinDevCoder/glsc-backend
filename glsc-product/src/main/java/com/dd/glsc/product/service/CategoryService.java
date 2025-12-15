@@ -3,7 +3,9 @@ package com.dd.glsc.product.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dd.common.utils.PageUtils;
 import com.dd.glsc.product.entity.CategoryEntity;
+import com.dd.glsc.product.entity.vo.CategoryVO;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -16,5 +18,7 @@ import java.util.Map;
 public interface CategoryService extends IService<CategoryEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    List<CategoryVO> listWithTree();
 }
 
