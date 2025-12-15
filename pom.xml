@@ -17,5 +17,6 @@
         <module>renren-fast</module>
         <module>renren-generator</module>
         <module>glsc-common</module>
+        <module>glsc-gateway</module>
     </modules>
 </project>

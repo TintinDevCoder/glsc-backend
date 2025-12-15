@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: baidu_route
+          uri: http://www.baidu.com
+          predicates:
+            - Query=url,baidu
+          filters:
+            - StripPrefix=1
+        - id: qq_route
+          uri: http://www.qq.com
+          predicates:
+            - Query=url,qq
+          filters:
+            - StripPrefix=1
