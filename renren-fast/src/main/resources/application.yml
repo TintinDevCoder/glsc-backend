@@ -23,7 +23,17 @@ spring:
       max-file-size: 100MB
       max-request-size: 100MB
       enabled: true
-
+  application:
+    name: renren-fast
+  cloud:
+    nacos:
+      # Nacos 服务器地址（Config 和 Discovery 共用）
+      discovery:
+        server-addr: 127.0.0.1:8848
+        # Nacos 认证信息（如果开启了认证）
+        username: nacos
+        password: nacos
+        namespace: c5d6c163-3e4c-42fe-8f97-6c0a032af9d7
   mvc:
     throw-exception-if-no-handler-found: true
     pathmatch:
@@ -65,3 +75,5 @@ renren:
     # token有效时长，7天，单位秒
     expire: 604800
     header: token
+
+
