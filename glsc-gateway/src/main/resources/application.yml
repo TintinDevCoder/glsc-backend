@@ -14,3 +14,11 @@ spring:
             - Query=url,qq
           filters:
             - StripPrefix=1
+        ##前端项目请求都带有/api
+        ##后端微服务renren-fast统一处理/api前缀
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>.*), /renren-fast/$\{segment}

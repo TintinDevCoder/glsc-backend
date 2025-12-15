@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4253523c-24b1-450a-8e20-96b7e18517f4" name="Changes" comment="初始化网关">
-      <change afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/vo/CategoryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4253523c-24b1-450a-8e20-96b7e18517f4" name="Changes" comment="glsc-product-category：返回所有分类列表">
+      <change afterPath="$PROJECT_DIR$/glsc-gateway/src/main/java/com/dd/glsc/gateway/config/GlscCorsConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/RenrenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/RenrenApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
@@ -189,7 +177,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RenrenApplication">
+  <component name="RunManager" selected="Application.GlscGatewayApplication">
     <configuration name="GlscGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dd.glsc.gateway.GlscGatewayApplication" />
       <module name="glsc-gateway" />
@@ -278,9 +266,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GlscGatewayApplication" />
         <item itemvalue="Application.RenrenApplication" />
         <item itemvalue="Spring Boot.GlscProductApplication" />
-        <item itemvalue="Application.GlscGatewayApplication" />
         <item itemvalue="Application.GlscWareApplication" />
         <item itemvalue="Spring Boot.GlscOrderApplication" />
       </list>
@@ -312,7 +300,7 @@
       <workItem from="1765522199899" duration="693000" />
       <workItem from="1765522963574" duration="8571000" />
       <workItem from="1765765634378" duration="120000" />
-      <workItem from="1765765763329" duration="271000" />
+      <workItem from="1765765763329" duration="3637000" />
     </task>
     <task id="LOCAL-00001" summary="init module">
       <option name="closed" value="true" />
@@ -338,7 +326,31 @@
       <option name="project" value="LOCAL" />
       <updated>1765762524081</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="renren-fast注册到nacos">
+      <option name="closed" value="true" />
+      <created>1765766110711</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765766110711</updated>
+    </task>
+    <task id="LOCAL-00005" summary="renren-fast注册到nacos">
+      <option name="closed" value="true" />
+      <created>1765766142177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765766142179</updated>
+    </task>
+    <task id="LOCAL-00006" summary="glsc-product-category：返回所有分类列表">
+      <option name="closed" value="true" />
+      <created>1765766227592</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765766227592</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +383,9 @@
     <MESSAGE value="init module" />
     <MESSAGE value="初始化5个服务，配置nacos注册发现与配置管理" />
     <MESSAGE value="初始化网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化网关" />
+    <MESSAGE value="renren-fast注册到nacos" />
+    <MESSAGE value="glsc-product-category：返回所有分类列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="glsc-product-category：返回所有分类列表" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
