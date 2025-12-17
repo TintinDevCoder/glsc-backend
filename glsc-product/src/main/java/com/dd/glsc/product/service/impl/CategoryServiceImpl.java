@@ -2,9 +2,9 @@ package com.dd.glsc.product.service.impl;
 
 import com.dd.glsc.product.entity.vo.CategoryVO;
 import org.springframework.beans.BeanUtils;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -34,6 +34,10 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return new PageUtils(page);
     }
 
+    /**
+     * 查出所有的分类以及子分类，以树形结构组装起来
+     * @return
+     */
     @Override
     public List<CategoryVO> listWithTree() {
         //1. 查出所有分类
@@ -48,11 +52,51 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
             BeanUtils.copyProperties(menu, categoryVO);
             categoryVO.setChildren(getChildrens(categoryVO, entities)); //递归查找子分类
             return categoryVO;
-        }).sorted((menu1, menu2) -> { //排序
-            return (menu1.getSort() == null ? 0 : menu1.getSort()) - (menu2.getSort() == null ? 0 : menu2.getSort());
         }).collect(Collectors.toList());
+        sortList(result); //排序
         //3. 返回结果
         return result;
+    }
+
+    /**
+     * 对节点排序
+     * @param list
+     */
+    public void sortList(List<CategoryVO> list) {
+        // 收集到新的列表中
+        List<CategoryVO> sortedList = list.stream()
+                .sorted((menu1, menu2) -> {
+                    return (menu1.getSort() == null ? 0 : menu1.getSort()) - (menu2.getSort() == null ? 0 : menu2.getSort());
+                })
+                .collect(Collectors.toList()); // 生成新的排序列表
+
+        // 清空原始列表并将排序后的元素添加到原列表中
+        list.clear();
+        list.addAll(sortedList);
+
+        // 递归排序子节点
+        for (CategoryVO categoryVO : list) {
+            if (categoryVO.getChildren() != null && categoryVO.getChildren().size() > 0) {
+                sortList(categoryVO.getChildren());
+            }
+        }
+    }
+
+    /**
+     * 批量删除分类
+     */
+    @Override
+    public void removeCategoryByIds(List<Long> asList) {
+        //检查当前删除的菜单，是否被别的地方引用
+        QueryWrapper<CategoryEntity> queryWrapper = new QueryWrapper<>();
+        queryWrapper.lambda()
+                .in(CategoryEntity::getParentCid, asList);
+        long count = this.count(queryWrapper);
+        if (count > 0) {
+            throw new RuntimeException("当前删除的分类被引用，不能删除");
+        }
+        //逻辑删除
+        baseMapper.deleteByIds(asList);
     }
 
     /**

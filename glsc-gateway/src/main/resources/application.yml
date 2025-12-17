@@ -15,6 +15,13 @@ spring:
           filters:
             - StripPrefix=1
         ##前端项目请求都带有/api
+        ##商品api
+        - id: product_route
+          uri: lb://glsc-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>.*), /$\{segment}
         ##后端微服务renren-fast统一处理/api前缀
         - id: admin_route
           uri: lb://renren-fast

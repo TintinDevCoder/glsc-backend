@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4253523c-24b1-450a-8e20-96b7e18517f4" name="Changes" comment="glsc-product-category：返回所有分类列表">
-      <change afterPath="$PROJECT_DIR$/glsc-gateway/src/main/java/com/dd/glsc/gateway/config/GlscCorsConfiguration.java" afterDir="false" />
+    <list default="true" id="4253523c-24b1-450a-8e20-96b7e18517f4" name="Changes" comment="glsc-product-category：">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glsc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
@@ -28,7 +32,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/renren-generator" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -71,62 +75,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.GlscGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GlscMemberApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GlscProductApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GlscWareApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RenrenApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GlscProductApplicationTests.contextLoads.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.glsc-backend [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.glsc-backend [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.glsc-product [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.renren-fast [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.renren-fast [compile].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GlscCouponApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GlscCouponApplication2.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GlscMemberApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GlscOrderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GlscProductApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.GlscWareApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.RenrenApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.RenrenApplication (2).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.RenrenApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/desktop/26/glsc/glsc-backend/renren-fast/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/desktop/26/glsc/glsc-backend/glsc-common/src/main/java/com/dd/glsc/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GlscGatewayApplication.executor": "Run",
+    "Application.GlscMemberApplication.executor": "Run",
+    "Application.GlscProductApplication.executor": "Run",
+    "Application.GlscWareApplication.executor": "Run",
+    "Application.RenrenApplication.executor": "Run",
+    "JUnit.GlscProductApplicationTests.contextLoads.executor": "Debug",
+    "Maven.glsc-backend [clean].executor": "Run",
+    "Maven.glsc-backend [install].executor": "Run",
+    "Maven.glsc-product [clean].executor": "Run",
+    "Maven.renren-fast [clean].executor": "Run",
+    "Maven.renren-fast [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GlscCouponApplication.executor": "Run",
+    "Spring Boot.GlscCouponApplication2.executor": "Run",
+    "Spring Boot.GlscMemberApplication.executor": "Run",
+    "Spring Boot.GlscOrderApplication.executor": "Run",
+    "Spring Boot.GlscProductApplication.executor": "Debug",
+    "Spring Boot.GlscWareApplication.executor": "Run",
+    "Spring Boot.RenrenApplication (1).executor": "Run",
+    "Spring Boot.RenrenApplication (2).executor": "Run",
+    "Spring Boot.RenrenApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/desktop/26/glsc/glsc-backend/renren-fast/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/desktop/26/glsc/glsc-backend/glsc-common/src/main/java/com/dd/glsc/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.18066406",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -177,7 +181,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GlscGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.RenrenApplication (2)">
     <configuration name="GlscGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dd.glsc.gateway.GlscGatewayApplication" />
       <module name="glsc-gateway" />
@@ -266,9 +270,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GlscProductApplication" />
         <item itemvalue="Application.GlscGatewayApplication" />
         <item itemvalue="Application.RenrenApplication" />
-        <item itemvalue="Spring Boot.GlscProductApplication" />
         <item itemvalue="Application.GlscWareApplication" />
         <item itemvalue="Spring Boot.GlscOrderApplication" />
       </list>
@@ -300,7 +304,7 @@
       <workItem from="1765522199899" duration="693000" />
       <workItem from="1765522963574" duration="8571000" />
       <workItem from="1765765634378" duration="120000" />
-      <workItem from="1765765763329" duration="3637000" />
+      <workItem from="1765765763329" duration="30730000" />
     </task>
     <task id="LOCAL-00001" summary="init module">
       <option name="closed" value="true" />
@@ -350,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765766227592</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="glsc：网关代理所有请求+解决跨域">
+      <option name="closed" value="true" />
+      <created>1765770461774</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765770461774</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +397,8 @@
     <MESSAGE value="初始化网关" />
     <MESSAGE value="renren-fast注册到nacos" />
     <MESSAGE value="glsc-product-category：返回所有分类列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="glsc-product-category：返回所有分类列表" />
+    <MESSAGE value="glsc：网关代理所有请求+解决跨域" />
+    <option name="LAST_COMMIT_MESSAGE" value="glsc：网关代理所有请求+解决跨域" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
