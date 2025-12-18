@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/glsc-member/pom.xml" />
         <option value="$PROJECT_DIR$/renren-fast/pom.xml" />
         <option value="$PROJECT_DIR$/glsc-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/glsc-third-party/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="glsc-mysql" uuid="610ce981-33af-4c2f-ad70-e2058a52b2fe">
+    <data-source source="LOCAL" name="glsc-mysql" uuid="8f5cddee-f874-489f-8282-e98bc591c8db">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

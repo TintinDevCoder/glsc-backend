@@ -18,5 +18,6 @@
         <module>renren-generator</module>
         <module>glsc-common</module>
         <module>glsc-gateway</module>
+        <module>glsc-third-party</module>
     </modules>
 </project>

@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4253523c-24b1-450a-8e20-96b7e18517f4" name="Changes" comment="glsc-product-category：">
+    <list default="true" id="4253523c-24b1-450a-8e20-96b7e18517f4" name="Changes" comment="glsc-product：增删改查分类模块">
+      <change afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/vo/BrandEntityVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glsc-third-party/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glsc-third-party/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/610ce981-33af-4c2f-ad70-e2058a52b2fe/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/main/java/com/dd/glsc/product/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glsc-product/src/test/java/com/dd/glsc/product/GlscProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/glsc-product/src/test/java/com/dd/glsc/product/GlscProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
@@ -32,7 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/renren-generator" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -80,9 +90,13 @@
     "Application.GlscGatewayApplication.executor": "Run",
     "Application.GlscMemberApplication.executor": "Run",
     "Application.GlscProductApplication.executor": "Run",
+    "Application.GlscThirdPartyApplication.executor": "Debug",
     "Application.GlscWareApplication.executor": "Run",
     "Application.RenrenApplication.executor": "Run",
     "JUnit.GlscProductApplicationTests.contextLoads.executor": "Debug",
+    "JUnit.GlscProductApplicationTests.testCosConnection.executor": "Run",
+    "JUnit.GlscProductApplicationTests.testFileUpload.executor": "Run",
+    "JUnit.GlscProductApplicationTests.testUploadImage.executor": "Run",
     "Maven.glsc-backend [clean].executor": "Run",
     "Maven.glsc-backend [install].executor": "Run",
     "Maven.glsc-product [clean].executor": "Run",
@@ -107,10 +121,10 @@
     "Spring Boot.RenrenApplication (2).executor": "Run",
     "Spring Boot.RenrenApplication.executor": "Run",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/desktop/26/glsc/glsc-backend/renren-fast/src/main/resources",
+    "last_opened_file_path": "D:/desktop/26/glsc/glsc-backend/glsc-third-party/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -136,11 +150,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\desktop\26\glsc\glsc-backend\glsc-third-party\src\main\resources" />
       <recent name="D:\desktop\26\glsc\glsc-backend\renren-fast\src\main\resources" />
       <recent name="D:\desktop\26\glsc\glsc-backend\glsc-gateway\src\main" />
       <recent name="D:\desktop\26\glsc\glsc-backend\glsc-ware\src\main\resources" />
       <recent name="D:\desktop\26\glsc\glsc-backend\glsc-product\src\main\resources" />
-      <recent name="D:\desktop\26\glsc\glsc-backend\glsc-order\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dd.glsc.product.entity.vo" />
@@ -163,31 +177,29 @@
           <value>
             <map>
               <entry key="GlscGatewayApplication" value="STOPPED" />
-              <entry key="GlscWareApplication" value="STOPPED" />
-              <entry key="RenrenApplication" value="STOPPED" />
+              <entry key="GlscThirdPartyApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="GlscOrderApplication" value="STOPPED" />
               <entry key="GlscProductApplication" value="STOPPED" />
               <entry key="RenrenApplication" value="STOPPED" />
-              <entry key="RenrenApplication (2)" value="FAILED" />
+              <entry key="RenrenApplication (2)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RenrenApplication (2)">
-    <configuration name="GlscGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.gateway.GlscGatewayApplication" />
-      <module name="glsc-gateway" />
+  <component name="RunManager" selected="JUnit.GlscThirdPartyApplicationTests.testUploadImage">
+    <configuration name="GlscThirdPartyApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.thirdparty.GlscThirdPartyApplication" />
+      <module name="glsc-third-party" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dd.glsc.gateway.*" />
+          <option name="PATTERN" value="com.dd.glsc.thirdparty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,54 +207,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GlscWareApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.ware.GlscWareApplication" />
-      <module name="glsc-ware" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dd.glsc.ware.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RenrenApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.renren.RenrenApplication" />
-      <module name="renren-fast" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.renren.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GlscOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="glsc-order" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dd.glsc.order.GlscOrderApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dd.glsc.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GlscProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GlscProductApplicationTests.testCosConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="glsc-product" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dd.glsc.product.GlscProductApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dd.glsc.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.dd.glsc.product" />
+      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.product.GlscProductApplicationTests" />
+      <option name="METHOD_NAME" value="testCosConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlscProductApplicationTests.testFileUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="glsc-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dd.glsc.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dd.glsc.product" />
+      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.product.GlscProductApplicationTests" />
+      <option name="METHOD_NAME" value="testFileUpload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlscProductApplicationTests.testUploadImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="glsc-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dd.glsc.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dd.glsc.product" />
+      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.product.GlscProductApplicationTests" />
+      <option name="METHOD_NAME" value="testUploadImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlscThirdPartyApplicationTests.testUploadImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="glsc-third-party" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dd.glsc.thirdparty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dd.glsc.thirdparty" />
+      <option name="MAIN_CLASS_NAME" value="com.dd.glsc.thirdparty.GlscThirdPartyApplicationTests" />
+      <option name="METHOD_NAME" value="testUploadImage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -270,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GlscProductApplication" />
-        <item itemvalue="Application.GlscGatewayApplication" />
-        <item itemvalue="Application.RenrenApplication" />
-        <item itemvalue="Application.GlscWareApplication" />
-        <item itemvalue="Spring Boot.GlscOrderApplication" />
+        <item itemvalue="JUnit.GlscThirdPartyApplicationTests.testUploadImage" />
+        <item itemvalue="Application.GlscThirdPartyApplication" />
+        <item itemvalue="JUnit.GlscProductApplicationTests.testUploadImage" />
+        <item itemvalue="JUnit.GlscProductApplicationTests.testFileUpload" />
+        <item itemvalue="JUnit.GlscProductApplicationTests.testCosConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +328,12 @@
       <workItem from="1765522199899" duration="693000" />
       <workItem from="1765522963574" duration="8571000" />
       <workItem from="1765765634378" duration="120000" />
-      <workItem from="1765765763329" duration="30730000" />
+      <workItem from="1765765763329" duration="32950000" />
+      <workItem from="1765962505394" duration="2033000" />
+      <workItem from="1765965553152" duration="12000" />
+      <workItem from="1765965819459" duration="8000" />
+      <workItem from="1765966060210" duration="9629000" />
+      <workItem from="1766029598535" duration="9787000" />
     </task>
     <task id="LOCAL-00001" summary="init module">
       <option name="closed" value="true" />
@@ -362,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765770461774</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="glsc-product：增删改查分类模块">
+      <option name="closed" value="true" />
+      <created>1765956575795</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765956575795</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +416,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -398,7 +435,8 @@
     <MESSAGE value="renren-fast注册到nacos" />
     <MESSAGE value="glsc-product-category：返回所有分类列表" />
     <MESSAGE value="glsc：网关代理所有请求+解决跨域" />
-    <option name="LAST_COMMIT_MESSAGE" value="glsc：网关代理所有请求+解决跨域" />
+    <MESSAGE value="glsc-product：增删改查分类模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="glsc-product：增删改查分类模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
