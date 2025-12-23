@@ -55,4 +55,15 @@ public class ResultUtils {
     public static BaseResponse<?> error(ErrorCode errorCode, String message) {
         return new BaseResponse<>(errorCode.getCode(), null, message);
     }
+
+    /**
+     * 成功
+     *
+     * @param data 数据
+     * @param <T>  数据类型
+     * @return 响应
+     */
+    public static <T> BaseResponse<T> error(ErrorCode errorCode, T data) {
+        return new BaseResponse<>(errorCode.getCode(), data, errorCode.getMessage());
+    }
 }

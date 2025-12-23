@@ -4,7 +4,14 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.dd.common.common.BaseResponse;
+import com.dd.common.common.ResultUtils;
+import com.dd.common.valid.group.AddGroup;
+import com.dd.common.valid.group.UpdateGroup;
+import com.dd.common.valid.group.UpdateStatus;
+import com.dd.glsc.product.entity.dto.BrandStatusDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +22,6 @@ import com.dd.glsc.product.entity.BrandEntity;
 import com.dd.glsc.product.service.BrandService;
 import com.dd.common.utils.PageUtils;
 import com.dd.common.utils.R;
-
 
 
 /**
@@ -59,10 +65,25 @@ public class BrandController {
      */
     @RequestMapping("/save")
     //@RequiresPermissions("product:brand:save")
-    public R save(@RequestBody BrandEntity brand){
+    public BaseResponse save(@Validated({AddGroup.class}) @RequestBody BrandEntity brand/*, BindingResult bindingResult*/){
+        // 验证品牌数据
+/*        if (bindingResult.hasErrors()) {
+            // 获取校验的错误信息
+            Map<String, String> map = new HashMap();
+            map.put("400", "提交的数据不合法");
+            for (FieldError fieldError : bindingResult.getFieldErrors()) {
+                // 获取到错误提示
+                String message = fieldError.getDefaultMessage();
+                // 获取到错误的属性名字
+                String field = fieldError.getField();
+                map.put(field, message);
+            }
+            return ResultUtils.error(map);
+        }*/
+
 		brandService.save(brand);
 
-        return R.ok();
+        return ResultUtils.success();
     }
 
     /**
@@ -70,12 +91,27 @@ public class BrandController {
      */
     @RequestMapping("/update")
     //@RequiresPermissions("product:brand:update")
-    public R update(@RequestBody BrandEntity brand){
+    public R update(@Validated({UpdateGroup.class})@RequestBody BrandEntity brand){
 		brandService.updateById(brand);
 
         return R.ok();
     }
 
+    /**
+     * 仅修改状态
+     * @param brandStatusDTO
+     * @return
+     */
+    @RequestMapping("/update/status")
+    //@RequiresPermissions("product:brand:update")
+    public R updateStatus(@Validated({UpdateStatus.class})@RequestBody BrandStatusDTO brandStatusDTO){
+        BrandEntity brand = new BrandEntity();
+        brand.setBrandId(brandStatusDTO.getBrandId());
+        brand.setShowStatus(brandStatusDTO.getShowStatus());
+        brandService.updateById(brand);
+
+        return R.ok();
+    }
     /**
      * 删除
      */
